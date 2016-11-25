@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCf4ee42">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCf4ee42">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/winid"
+        android:background="@drawable/modiwin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        android:visibility="visible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/winid1"
+        android:background="@drawable/trumpwin"/>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adbannerwinner"
+        android:layout_gravity="center_horizontal|top">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

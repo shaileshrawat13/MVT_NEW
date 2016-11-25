@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shaileshrawat.mvt">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MVT"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name=".modipersonal"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name=".trumppersonal"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+
+        <activity android:name=".mvtPersonalDiff"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name=".mvtPoliticalDiff"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name=".winner"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+    </application>
+
+</manifest>
